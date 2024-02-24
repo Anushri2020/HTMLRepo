@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+              .aBox{
+                  position: fixed;
+                  top:0;
+                 transform: rotate(80deg);
+                  left: 0;
+              }
+               .wave{
+                   position: absolute;
+                   opacity: .4;
+                   width: 1500px;
+                   height: 1200px;
+                   margin-left: -150px;
+                   margin-top: -250px;
+                   border-radius: 43%;
+               }
+
+               .wave.-one {
+                     animation: rotate 6000ms infinite linear;
+                   opacity: .1;
+                  background-color: darkblue;
+               }
+
+               .wave.-two {
+                     animation: rotate 7000ms infinite linear;
+                   opacity: .1;
+                  background-color: rgb(120, 123, 124);
+               }
+
+               .wave.-three {
+                     animation: rotate 6500ms infinite linear;
+                   opacity: .1;
+                  background-color: rgb(13, 15, 15);
+               }
+               @keyframes rotate {
+                   from{transform: rotate(0deg);}
+                   from{transform: rotate(300deg);}
+                   
+               }
+        </style>
+    </head>
+    <body>
+        <div class="aBox">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+        </div>
+    </body>
+</html>
